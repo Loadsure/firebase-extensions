@@ -1,0 +1,9 @@
+test-project-key.json
+
+.vscode
+node_modules
+*.js.map
+functions/lib/test/*.js
+stress_test/**/*.js
+
+functions/tasks.json
