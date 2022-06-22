@@ -18,9 +18,11 @@ import config from "./config";
 import * as functions from "firebase-functions";
 import {
   ChangeType,
+  FirestoreEventHistoryTracker
+} from "./../../firestore-bigquery-change-tracker/src/index";
+import {
   FirestoreBigQueryEventHistoryTracker,
-  FirestoreEventHistoryTracker,
-} from "./../../firestore-bigquery-change-tracker/src";
+} from "./../../firestore-bigquery-change-tracker/src/bigquery/index";
 import * as logs from "./logs";
 import { getChangeType, getDocumentId } from "./util";
 
