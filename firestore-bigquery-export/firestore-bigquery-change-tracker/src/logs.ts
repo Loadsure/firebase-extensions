@@ -149,7 +149,7 @@ export const dataInsertRetried = (rowCount: number) => {
 };
 
 export const dataInserting = (rowCount: number) => {
-  logger.log(`Inserting ${rowCount} row(s) of data into BigQuery`);
+  logger.log(`Hello Inserting ${rowCount} row(s) of data into BigQuery`);
 };
 
 export const dataTypeInvalid = (
