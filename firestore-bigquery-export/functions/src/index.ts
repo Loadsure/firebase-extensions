@@ -20,7 +20,7 @@ import {
   ChangeType,
   FirestoreBigQueryEventHistoryTracker,
   FirestoreEventHistoryTracker,
-} from "./../../firestore-bigquery-change-tracker";
+} from "./../../firestore-bigquery-change-tracker/src";
 import * as logs from "./logs";
 import { getChangeType, getDocumentId } from "./util";
 
