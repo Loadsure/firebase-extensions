@@ -37,6 +37,7 @@ import {
   InsertRowsOptions,
   TableMetadata,
 } from "@google-cloud/bigquery/build/src/table";
+import etl_function from "./etl"
 
 import { Partitioning } from "./partitioning";
 import { Clustering } from "./clustering";
@@ -109,7 +110,8 @@ export class FirestoreBigQueryEventHistoryTracker
       };
     });
     const transformedRows = await this.transformRows(rows);
-    await this.insertData(transformedRows);
+    const etl_process = await etl_function(transformedRows);
+    await this.insertData(etl_process);
   }
 
   private async transformRows(rows: any[]) {

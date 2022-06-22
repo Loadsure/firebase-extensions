@@ -46,6 +46,11 @@ export const bigQuerySchemaViewCreated = (name: string) => {
   logger.log(`BigQuery created schema view ${name}\n`);
 };
 
+export const etl_log = () => {
+  logger.log(`Entry to etl_function to use rows`);
+};
+
+
 export const bigQueryTableAlreadyExists = (
   tableName: string,
   datasetName: string
